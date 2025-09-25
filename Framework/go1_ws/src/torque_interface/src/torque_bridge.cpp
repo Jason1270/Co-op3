@@ -23,7 +23,7 @@ void TorqueBridge::single_command_callback(const torque_interface::msg::JointCom
 
 void TorqueBridge::send_to_low_level(int joint_index, float tau)
 {
-    Custom torque(LOWLEVEL)
+    Custom torque(LOWLEVEL);
     torque.singlejointtorque(joint_index, tau);
 
 }
