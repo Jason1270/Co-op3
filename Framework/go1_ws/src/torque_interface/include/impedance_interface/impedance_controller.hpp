@@ -30,5 +30,5 @@ class ImpedanceController : public rclcpp::Node{
         rclcpp::TimerBase::SharedPtr timer_;
         std::mutex data_mutex_;
         std::vector<double> measured_position_, measured_velocity_, desired_position_, desired_velocity_;
-        std:vector<double> stiffness_, damping_, torque_limits_;
+        std::vector<double> stiffness_, damping_, torque_limits_;
 };
